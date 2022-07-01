@@ -1,5 +1,4 @@
 <template>
-  modifie ici
   <img src="./assets/logo_restaurant-300x300.jpg" alt="logo_restaurant" />
   <SignUp />
 </template>
