@@ -1,0 +1,10 @@
+{
+  "users": [
+    {
+      "email": "fernando.j@test.fr",
+      "name": "Fernando Jordan",
+      "password": "identique",
+      "id": 1
+    }
+  ]
+}

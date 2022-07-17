@@ -3,16 +3,30 @@
   <h1>Sign Up</h1>
   <div class="register">
     <!-- No need <form></form> -->
-    <input type="text" placeholder="Enter Name" name="name" />
-    <input type="text" placeholder="Enter Email" name="email" />
-    <input type="text" placeholder="Enter Password" name="password" />
-    <button type="submit">SignUp</button>
+    <!-- Directive -->
+    <input type="text" v-model="name" placeholder="Enter Name" name="name" />
+    <input type="text" v-model="email" placeholder="Enter Email" name="email" />
+    <input
+      type="text"
+      v-model="password"
+      placeholder="Enter Password"
+      name="password"
+    />
+    <button v-on:click="signUp">Sign Up</button>
   </div>
 </template>
 
 <script>
 export default {
-  name: "SignUp"
+  name: "SignUp",
+  data() {
+    return { name: "", email: "", password: "" };
+  },
+  methods: {
+    signUp() {
+      console.warn("signup", this.name, this.email, this.password);
+    }
+  }
 };
 </script>
 
